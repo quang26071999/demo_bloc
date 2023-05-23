@@ -66,9 +66,9 @@ class _SearchProductPageState extends State<SearchProductPage> {
                       CachedNetworkImage(imageUrl: product.image,
                         placeholder:(context, url) => const CircularProgressIndicator(),
                       errorWidget: (context, url, error) => const Icon(Icons.error),),
-                      Text(product.name),
-                      Text(product.id),
-                      Text(product.color),
+                      Text("TEXT1"),
+                      Text("Text2"),
+                      Text("Text3"),
 
                     ],
                   );

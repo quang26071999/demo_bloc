@@ -77,7 +77,7 @@ class _SearchProductPageState extends State<SearchProductPage> {
             else if(state is ProductErrorState){
               return Text(state.err);
             }else{
-              return Column();
+              return Container();
             }
           },
         )

@@ -45,7 +45,7 @@ class _SearchProductPageState extends State<SearchProductPage> {
           title: Container(
             child: TextButton(onPressed: () {
             },
-              child: Text("123"),
+              child: const Text("TEST123"),
             ),
           ),
         ),
@@ -77,7 +77,7 @@ class _SearchProductPageState extends State<SearchProductPage> {
             else if(state is ProductErrorState){
               return Text(state.err);
             }else{
-              return Container();
+              return const Placeholder();
             }
           },
         )

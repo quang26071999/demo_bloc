@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       // sửa 1
-      // debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: true,
       home: SearchProductPage(),
     );
   }
@@ -47,7 +47,7 @@ class _SearchProductPageState extends State<SearchProductPage> {
           title: Container(
             child: TextButton(onPressed: () {
             },
-              child: Text("Click"),
+              child: Text("Test"),
             ),
           ),
         ),

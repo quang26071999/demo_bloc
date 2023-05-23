@@ -17,7 +17,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      debugShowCheckedModeBanner: false,
       home: SearchProductPage(),
     );
   }
@@ -41,12 +40,10 @@ class _SearchProductPageState extends State<SearchProductPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.grey,
+          // backgroundColor: Colors.grey,
+          backgroundColor: Colors.teal, //sửa 2
           title: Container(
-            child: TextButton(onPressed: () {
-            },
-              child: Text("Click"),
-            ),
+
           ),
         ),
         body: BlocBuilder<ProductBloc, ProductState>(
